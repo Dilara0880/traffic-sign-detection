@@ -3,7 +3,7 @@ from PIL import Image
 import cv2
 import matplotlib.pyplot as plt
 
-model = YOLO('yolov8n.pt')  
+model = YOLO('best.pt')  
 
 def detect_objects(image_path):
     results = model.predict(image_path)
